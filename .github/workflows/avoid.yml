@@ -2,7 +2,8 @@ name: 'Avoid workflow being suspended'
 
 on:
   workflow_dispatch:
-
+  schedule:
+    - cron: '50 2 * * *' 
 jobs:
   avoid_workflow_suspended:
     runs-on: ubuntu-latest
