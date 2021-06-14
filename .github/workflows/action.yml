@@ -3,7 +3,7 @@ name: 'EUserv Auto Extend-aol'
 on:
   workflow_dispatch:
   schedule:
-    - cron: '22 16 * * 4'      
+    - cron: '50 1 * * 0,3'     
 jobs:
   auto_renew:
     runs-on: ubuntu-latest
